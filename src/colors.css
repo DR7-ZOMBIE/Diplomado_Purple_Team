@@ -1,0 +1,7 @@
+:root {
+  --brand-blue: #0B3C5D;   /* fondos fuertes */
+  --primary:    #502274;   /* púrpura títulos */
+  --cta:        #CFA64B;   /* botones */
+  --accent:     #12B5C3;   /* hovers / iconos */
+  --base-light: #F7F8FA;   /* gris claro secciones */
+}
