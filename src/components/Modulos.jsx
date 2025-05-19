@@ -21,8 +21,7 @@ const modules = [
     name: 'OSINT',
     icon: MagnifyingGlassCircleIcon,
     tagline: 'Investiga como periodista, piensa como analista.',
-    story:
-      'Convierte huellas digitales en inteligencia para anticipar ciber-amenazas y destapar fraudes.',
+    story: 'Convierte huellas digitales en inteligencia para anticipar ciber-amenazas y destapar fraudes.',
     learn: '• Doxing ético • Footprinting avanzado • GEOINT • Automatización con Maltego',
     deep: `
 ### Historia y teoría
@@ -33,14 +32,28 @@ const modules = [
 ### Lo que harás
 1. Mapear presencia online de un objetivo real.  
 2. Construir grafos con Maltego y SpiderFoot.  
-3. Elaborar informes accionables y legales.`,
+3. Elaborar informes accionables y legales.
+
+### Temáticas del módulo
+- Open Source Intelligence (OSINT)  
+- Enumeración pasiva:  
+  - Google Dorks  
+  - Shodan  
+  - Motores de búsqueda  
+  - Enumeración DNS  
+  - Perfiles digitales  
+- Enumeración activa:  
+  - Escaneo de puertos  
+  - Identificación de versiones  
+  - Enumeración de protocolos  
+- Phishing
+    `,
   },
   {
     name: 'Web Pentesting',
     icon: GlobeAltIcon,
     tagline: 'Rompe la web (para arreglarla).',
-    story:
-      'Del primer XSS al bug-bounty millonario: domina las técnicas que blindan Internet.',
+    story: 'Del primer XSS al bug-bounty millonario: domina las técnicas que blindan Internet.',
     learn: '• SQL/NoSQLi • SSRF • Deserialización • OAuth/JWT Abuse',
     deep: `
 ### Historia y teoría
@@ -51,14 +64,29 @@ const modules = [
 ### Lo que harás
 1. Analizar la pila HTTP y sus puntos ciegos.  
 2. Crear exploits reproducibles con Burp & ZAP.  
-3. Comunicar hallazgos en lenguaje de devs.`,
+3. Comunicar hallazgos en lenguaje de devs.
+
+### Temáticas del módulo
+- ¿Cómo funciona la World Wide Web?  
+- Herramientas:  
+  - Burp Suite  
+  - Escáneres de directorios  
+  - Nikto  
+- Enumeración de sitios web  
+- OWASP Top 10  
+- Vulnerabilidades Web para Bug Bounty:  
+  - Cross Site-Scripting (XSS)  
+  - Inyección SQL  
+  - Carga de archivos insegura  
+  - Inyección de comandos  
+  - Inclusión de archivos locales y remotos
+    `,
   },
   {
     name: 'Redes',
     icon: ServerStackIcon,
     tagline: 'Controla los paquetes, controla el terreno.',
-    story:
-      'De ARPANET a Zero-Trust: captura, altera y defiende el tráfico que mueve el mundo.',
+    story: 'De ARPANET a Zero-Trust: captura, altera y defiende el tráfico que mueve el mundo.',
     learn: '• Sniffing Wireshark • VLAN-hopping • ARP-spoofing • IDS con Zeek',
     deep: `
 ### Historia y teoría
@@ -69,14 +97,25 @@ const modules = [
 ### Lo que harás
 1. Reconstruir topologías ocultas.  
 2. Generar tráfico malicioso controlado.  
-3. Medir la eficacia de un IDS moderno.`,
+3. Medir la eficacia de un IDS moderno.
+
+### Temáticas del módulo
+- Repaso de redes básico  
+- Análisis de paquetes de red  
+- Ataques a redes WiFi:  
+  - WEP / WPA / WPA2  
+  - Evil Twin  
+  - Karma  
+- Ataques a redes LAN:  
+  - Hombre en el medio (MITM)  
+  - ARP Spoofing
+    `,
   },
   {
     name: 'Seguridad en la Nube',
     icon: CloudIcon,
     tagline: 'Protege lo que ya no puedes tocar.',
-    story:
-      'IAM, contenedores y shared-responsibility: diseña arquitecturas resilientes.',
+    story: 'IAM, contenedores y shared-responsibility: diseña arquitecturas resilientes.',
     learn: '• Hardening IAM AWS/Azure • Kubernetes RBAC • CSPM open-source',
     deep: `
 ### Historia y teoría
@@ -87,14 +126,29 @@ const modules = [
 ### Lo que harás
 1. Detectar misconfigurations críticas.  
 2. Aplicar políticas *least-privilege* con IaC.  
-3. Responder incidentes en entornos elásticos.`,
+3. Responder incidentes en entornos elásticos.
+
+### Temáticas del módulo
+- Introducción a la nube  
+- Creación de tenant y habilitación de suscripción  
+- Administración de dominios  
+- Gestión de usuarios: crear, editar, eliminar  
+- Usuarios externos e invitados  
+- Asignación de licencias  
+- Reglas de correo y protección base  
+- Controles en almacenamiento en nube  
+- Protección de herramientas colaborativas  
+- DLP y clasificación de documentos  
+- Protección contra phishing y malware  
+- IaaS vs PaaS vs SaaS  
+- Infraestructura: máquinas virtuales, NSG, Firewall, Application Gateway
+    `,
   },
   {
     name: 'Móvil',
     icon: DevicePhoneMobileIcon,
     tagline: 'Reversea el laboratorio del bolsillo.',
-    story:
-      'Hooking dinámico y reversing: entiende cómo piensan las apps… y los atacantes.',
+    story: 'Hooking dinámico y reversing: entiende cómo piensan las apps… y los atacantes.',
     learn: '• Frida/Objection • Bypass root/jailbreak • OWASP MASVS',
     deep: `
 ### Historia y teoría
@@ -105,14 +159,30 @@ const modules = [
 ### Lo que harás
 1. Instrumentar apps con Frida.  
 2. Reverse de APK/IPA con Ghidra.  
-3. Testear contra el estándar MASVS.`,
+3. Testear contra el estándar MASVS.
+
+### Temáticas del módulo
+- Configuración de ambiente de prueba  
+- Rooting de celulares (Android)  
+- Ambiente con emulador  
+- Agregar certificados  
+- Interceptar peticiones con Burp  
+- Ambiente con celular físico  
+- Decompilación de APKs  
+- Pruebas con AndroGoat  
+- Bypass a detección de root  
+- Bypass de SSL pinning  
+- Extracción de datos en almacenamiento local  
+- Explotación del content-provider  
+- APK patching  
+- Frida
+    `,
   },
   {
     name: 'Explotación',
     icon: BeakerIcon,
     tagline: 'Diseña el camino hasta el shell.',
-    story:
-      'De buffer overflows a ROP: crea exploits que esquivan mitigaciones modernas.',
+    story: 'De buffer overflows a ROP: crea exploits que esquivan mitigaciones modernas.',
     learn: '• ASLR/DEP bypass • Fuzzing AFL++ • Exploits 64 bits',
     deep: `
 ### Historia y teoría
@@ -123,14 +193,24 @@ const modules = [
 ### Lo que harás
 1. Crear cadenas ROP con ropgadget.  
 2. Encontrar bugs con AFL++.  
-3. Automatizar exploits en pwntools.`,
+3. Automatizar exploits en pwntools.
+
+### Temáticas del módulo
+- Metasploit  
+- Abuso de software vulnerable  
+- Abuso de malas configuraciones  
+- Obtención de shells  
+- Web a RCE  
+- Escalada de privilegios Linux  
+- Escalada de privilegios Windows  
+- Post explotación
+    `,
   },
   {
     name: 'Directorio Activo',
     icon: Cog6ToothIcon,
     tagline: 'Domina el reino Kerberos.',
-    story:
-      'Kerberoast y BloodHound: controla el objetivo nº 1 del atacante interno.',
+    story: 'Kerberoast y BloodHound: controla el objetivo nº 1 del atacante interno.',
     learn: '• BloodHound • Kerberoasting • Hardening GPO',
     deep: `
 ### Historia y teoría
@@ -141,25 +221,77 @@ const modules = [
 ### Lo que harás
 1. Mapear privilegios con BloodHound.  
 2. Explotar delegaciones inseguras.  
-3. Diseñar bosques resilientes.`,
+3. Diseñar bosques resilientes.
+
+### Temáticas del módulo
+- ¿Cómo funciona un Directorio Activo?  
+- Configuración de laboratorio  
+- Enumeración de directorio activo  
+- Ataques a Directorio Activo:  
+  - LLMNR Poisoning  
+  - Ataques a Kerberos  
+  - Abuso de permisos excesivos  
+  - Abuso de GPOs  
+  - Delegación  
+  - Movimiento lateral  
+  - Escalamiento de privilegios
+    `,
   },
   {
     name: 'Forense Digital',
     icon: ShieldCheckIcon,
     tagline: 'Cada byte cuenta una historia.',
-    story:
-      'Cadena de custodia y memoria viva: reconstruye incidentes de alto perfil.',
-    learn: '• Volatility3 • Timeline artefacts • Reporte pericial',
+    story: 'Cadena de custodia y memoria viva: reconstruye incidentes de alto perfil.',
+    learn: '• Volatility3 • SleuthKit • Análisis de malware en RAM • Table-top simulations',
     deep: `
 ### Historia y teoría
 - **1984** — FBI Magnetic Media: primer laboratorio DF.  
 - **2008** — Volatility democratiza la memoria viva.  
-- **Actual** — DFIR *as-code* y artefactos cloud.
+- **Actual** — DFIR *as-code*, memoria viva y evidencia en la nube.
 
 ### Lo que harás
-1. Extraer evidencia volátil.  
-2. Generar líneas de tiempo completas.  
-3. Presentar conclusiones defendibles en corte.`,
+1. Realizar adquisición, preservación y análisis forense completo.  
+2. Utilizar herramientas como Autopsy, Volatility, SleuthKit, FTK Imager y Ghidra.  
+3. Simular incidentes reales y generar informes accionables y legales.
+
+### Temáticas del módulo
+- **Introducción al análisis forense digital**  
+  - Historia, evolución y alcance estratégico  
+  - Relevancia en ciberseguridad moderna
+
+- **Cadena de custodia y buenas prácticas**  
+  - ISO/IEC 27037: procedimientos, documentación y preservación  
+  - Garantía de integridad y autenticidad de evidencia digital
+
+- **Estándares internacionales**  
+  - ISO 27035: gestión y respuesta a incidentes  
+  - NIST SP 800-61: guía de manejo forense  
+  - Ciclo completo de análisis: recopilación, adquisición, preservación, análisis e informe
+
+- **Criptografía aplicada al análisis forense**  
+  - Algoritmos de hash (MD5, SHA-256), cifrado RSA, AES y curvas elípticas  
+  - Técnicas de desencriptado y análisis práctico  
+  - Riesgos forenses en criptografía cuántica
+
+- **Extracción y análisis de evidencias digitales**  
+  - Herramientas: Autopsy, Volatility, SleuthKit, FTK Imager, Ghidra, Wireshark, PhotoRec, DumpIt, AdaFree  
+  - Procedimientos de adquisición, recuperación y análisis en casos simulados
+
+- **Análisis avanzado de malware y rastros digitales**  
+  - Tipos de malware: ransomware, rootkit, spyware, botnets, cryptojackers, infostealers  
+  - Análisis de rastros persistentes en RAM, sistemas operativos y archivos
+
+- **Simulación de ataques y evaluación forense**  
+  - Ejercicios tipo Table Top: respuestas ante ataques en entornos controlados  
+  - Evaluación proactiva y reactiva del incidente
+
+- **Proceso forense integral**  
+  - Aplicación completa del ciclo forense a un incidente simulado  
+  - Documentación, autenticación y presentación de evidencias
+
+- **Evaluación y cierre**  
+  - Informe final, discusión de hallazgos, lecciones aprendidas y mejores prácticas
+    `,
   },
 ];
 
