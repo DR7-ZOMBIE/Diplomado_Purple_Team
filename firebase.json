@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/google123456789abcdef.html",
+        "destination": "/google123456789abcdef.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
